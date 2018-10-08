@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova.plugin.paytmpayment" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>PaytmPayment</name>
+    <js-module name="PaytmPayment" src="www/PaytmPayment.js">
+        <clobbers target="PaytmPayment" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="PaytmPayment">
+                <param name="android-package" value="cordova.plugin.paytmpayment.PaytmPayment" />
+            </feature>
+        </config-file>
+        <config-file parent="/manifest/application" target="AndroidManifest.xml">
+            <activity android:label="Paytm Activity" android:name="cordova.plugin.paytmpayment.PaytmActivity"/>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+        <source-file src="src/android/PaytmPayment.java" target-dir="src/cordova/plugin/paytmpayment/PaytmPayment" />
+        <source-file src="src/android/PaytmActivity.java" target-dir="src/cordova/plugin/paytmpayment/PaytmPayment" />
+        <framework src="src/android/paytmpayment.gradle" custom="true" type="gradleReference" />
+    </platform>
+</plugin>

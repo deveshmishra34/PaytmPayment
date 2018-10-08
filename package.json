@@ -1,0 +1,25 @@
+{
+  "name": "cordova.plugin.paytmpayment",
+  "version": "1.0.0",
+  "description": "This is ionic cordova plugin for Paytm Payment",
+  "cordova": {
+    "id": "cordova.plugin.paytmpayment",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deveshmishra34/PaytmPayment.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Devesh mishra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deveshmishra34/PaytmPayment/issues"
+  },
+  "homepage": "https://github.com/deveshmishra34/PaytmPayment#readme"
+}
